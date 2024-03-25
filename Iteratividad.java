@@ -11,23 +11,33 @@ public class Iteratividad {
 
 			// punto 4.1
 			matrizEnEspiral(5);
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.2
 			int matrizCuadradoPerfecto[][] = { { 4, 8 }, { 12, 4 } };
 			imprimirMatriz(cuadradoPerfecto(matrizCuadradoPerfecto));
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.3
 			String[][] matrizPalabrasSimilares = { { "cama", "acma" }, { "oso", "roso" }, { "tela", "late" } };
 			System.out.println(palabrasSimilaresIterativo(matrizPalabrasSimilares));
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.4
 			String[][] matrizEncadenamiento = { { "Sien", "encima", "mapa" }, { "Pata", "tapa", "papa" },
 					{ "Pato", "toma", "mama" }, };
 			System.out.println(encadenamientoPalabras(matrizEncadenamiento));
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.5
 			int[][] matrizPolidivisibles = { { 2016, 3029 }, { 4233, 381654729 } };
 			System.out.println(numerosPolidivisibles(matrizPolidivisibles));
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
 		}

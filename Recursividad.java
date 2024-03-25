@@ -9,23 +9,33 @@ public class Recursividad {
 		try {
 			// punto 4.1
 			matrizEnEspiral(5);
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.2
 			int matrizCuadradoPerfecto[][] = { { 4, 8 }, { 12, 4 } };
 			cuadradoPerfecto(matrizCuadradoPerfecto);
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.3
 			String[][] matrizPalabrasSimilares = { { "cama", "acma" }, { "oso", "roso" }, { "tela", "late" } };
 			palabrasSimilares(matrizPalabrasSimilares);
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.4
 			String[][] matrizEncadenamiento = { { "Sien", "encima", "mapa" }, { "Pata", "tapa", "papa" },
 					{ "Pato", "toma", "mama" }, };
 			encadenamientoPalabras(matrizEncadenamiento);
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 
 			// punto 4.5
 			int[][] matrizPolidivisibles = { { 2016, 3029 }, { 4233, 381654729 } };
 			encontrarPolidivisibles(matrizPolidivisibles);
+			System.out.println("Tiempo en milisegundos: " + System.currentTimeMillis());
+			System.out.println("Tiempo en nanosegundos: " + System.nanoTime());
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
 		}
